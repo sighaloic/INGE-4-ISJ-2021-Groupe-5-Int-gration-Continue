@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <!--<link th:href="@{/static/styles/parc.css}" rel="stylesheet"/>-->
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even){background-color: #f2f2f2}
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+    <title>Creation de Vehicules</title>
+</head>
+<body>
+<form action="#" th:action="@{/updateVeh}" th:object="${vehicule}" method="post">
+    <fieldset>
+        <input type="submit" id="submitButton" th:value="Enregistrer">
+        <input type="reset" id="resetButton" name="reset" th:value="Reinitialiser"/>
+        <table>
+            <thead>
+            <tr>
+                <th> Code</th>
+                <th> Immatriculation</th>
+                <th> Marque</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <input type="text" th:field="*{code}" readonly="readonly"/>
+                </td>
+
+                <td>
+                    <input type="text" th:field="*{immatriculation}"/>
+                </td>
+                <td>
+                    <input type="text" th:field="*{marque}"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>

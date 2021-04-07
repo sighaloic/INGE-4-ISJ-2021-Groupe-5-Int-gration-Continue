@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background-image: url('bigpig.jpg');
+	padding-right: 0 10px;
+}
+
+.wrapper{
+	max-width: 500px;
+	width: 100%;
+	background: #fff;
+	margin: 20px auto;
+	padding:30px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.125)
+}
+
+.wrapper .title{
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom:25px;
+	color: #fec107;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.wrapper .form{
+	width: 100%;
+
+}
+
+.wrapper .form .input_field{
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper .form .input_field label{
+	width: 200px;
+	color: #757575;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .textarea{
+	width: 100%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 3px;
+	transition: all 0.3s ease;
+}
+
+.wrapper .form .input_field .textarea{
+	resize: none;
+	height: 125px;
+}
+
+.wrapper .form .input_field .custom_select{
+	position: relative;
+	width: 100%;
+	height: 37px;
+}
+
+.wrapper .form .input_field .custom_select select{
+	-webkit-appearance:none;
+	appearance: none;	
+	border: 1px solid #d5dbd9;
+	width: 100%;
+	height: 100%;
+	padding: 8px 10px;
+	border-radius: 3px;
+	outline: none;
+
+}
+
+.wrapper .form .input_field .custom_select:before{
+	content: "";
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	border: 8px solid;
+	border-color: #d5dbd9 transparent transparent transparent;
+	pointer-events: none;  
+}
+
+.wrapper .form .input_field .input:focus,
+.wrapper .form .input_field .textarea:focus,
+.wrapper .form .input_field select:focus{
+	border:1px solid #fec107;
+}
+
+.wrapper .form .input_field p{
+	font-size: 14px;
+	color: #757575;
+
+}
+
+.wrapper .form .input_field .check{
+	width: 15px;
+	height: 15px;
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.wrapper .form .input_field .check .checkmark{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fec107;
+	display: block;
+	position: relative;
+	
+}
+
+.wrapper .form .input_field .check .checkmark:before{
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 2px;
+	width: 5px;
+	height: 2px;
+	border: 2px solid;
+	border-color: transparent transparent #fff #fff; 
+	transform: rotate(-45deg);
+	display: none;
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ 
+.checkmark:before{
+	background: #fec107;
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ 
+.checkmark:before{
+	display: block;
+}
+
+
+.wrapper .form .input_field .btn{
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 15px;
+	border: 0;
+	background: #fec107;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	outline: none;
+}
+
+
+
+.wrapper .form .input_field .btn:hover{
+	background: #ffd658;
+}
+
+@media(max-width: 420px){
+	.wrapper .form .input_field{
+		flex-direction: column;
+		align-items: flex-start; 
+	}
+
+	.wrapper .form .input_field label{
+		margin-bottom: 5px;
+
+	}
+
+	.wrapper .form .input_field.terms{
+		flex-direction: row;
+	}
+}
+#footer
+{
+	overflow: hidden;
+	padding: 3em 0em;
+	border-top: 1px solid #3B3B3A;
+}
+
+#footer p
+{
+	text-shadow: 1px 1px 0px rgba(0,0,0,.30);
+	text-align: center;
+	color: #959494;
+}
+
+#footer a
+{
+	color: #BFBFBF;
+}
+
+#header-wrapper
+{
+	overflow: hidden;
+	height: 90px;
+	background: #58534F;
+	border-bottom: 1px solid #3B3B3A;
+}
+
+#header
+{
+	overflow: hidden;
+}
+
+.container
+{
+	width: 1000px;
+	margin: 0px auto;
+}
+
+#menu
+{
+	padding: 40px 0px 0px 0px;
+	height: 99px;
+}
+
+#menu ul
+{
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li
+{
+	float: left;
+	padding: 2em 2em 2em 2em;
+	border-left: 1px solid #383533;
+	box-shadow:  -1px 0 0px #6D6865;
+}
+
+#menu a
+{
+	display: block;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px rgba(0,0,0,.30);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Archivo Narrow', sans-serif;
+	font-size: 1.10em;
+	color: #979A97;
+}
+
+#menu a:hover
+{
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+#menu .active a
+{
+	color: #FFFFFF;
+}
+
+#menu .first
+{
+	padding-left: 0px;
+	border-left: none;
+	box-shadow: none;
+}
+
+ul.style1 .first
+{
+	padding-top: 0em;
+	border-top: none;
+}
