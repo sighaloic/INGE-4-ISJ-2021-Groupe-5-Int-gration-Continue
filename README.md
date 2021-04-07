@@ -1,4 +1,10 @@
-# INGE-4-ISJ-2021-Groupe-5-Intégration-Continue
+# - Intégration Continue -
+ @2021 GROUPE 5
 
-Il s'agit juste d'un dépôt Git (repository) qui nous permettra de gérer l'intégration via Travis CI. 
-Mais le projet proprement dit reste siégé sur Gitlab.
+# Membres Groupe 5
+
+#### 1 - Lorges POLA
+#### 2 - Emmanuel Loïc NGONO FOE
+#### 3 - Joel SANZOUANGO
+#### 4 - Lionel PAYEP
+#### 5 - Loïc NDIE SIGHA
