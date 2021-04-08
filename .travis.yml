@@ -3,7 +3,6 @@ language: java
 jdk:
  - oraclejdk8
 
-
 install:
 - mvn -N io.takari:maven:wrapper
 - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
@@ -12,7 +11,5 @@ deploy:
   provider: heroku
   api_key:
     secure: "6d5e7847-256e-4251-aa04-68851678823d"
-  on:
-    branch: main
 
 dist: trusty
