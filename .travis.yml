@@ -13,8 +13,6 @@ deploy:
     secure: "6d5e7847-256e-4251-aa04-68851678823d"
   app: helloworld-v
   on:
-    branches:
-        only:
-          - master
+    repo: INGE-4-ISJ-2021-Groupe-5-Integration-Continue
 
 dist: trusty
