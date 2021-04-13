@@ -14,6 +14,7 @@ deploy:
   app: helloworld-v
   on:
     repo: INGE-4-ISJ-2021-Groupe-5-Integration-Continue
+    tags: true	
     branch: master
 
 dist: trusty
