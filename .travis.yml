@@ -9,7 +9,7 @@ install:
 
 deploy:
   provider: heroku
-  api_key: "6d5e7847-256e-4251-aa04-68851678823d"
+  api_key: "4d37acbc-6e96-4f0e-935f-4b50799f6739"
   app: helloworld-v
   on:
     repo: sighaloic/INGE-4-ISJ-2021-Groupe-5-Integration-Continue	
