@@ -10,10 +10,10 @@ install:
 deploy:
   provider: heroku
   api_key:
-    secure: "6d5e7847-256e-4251-aa04-68851678823d"
-  app: helloworld-v
+    secure: "2f655d2f-84fb-4cd3-b723-36ab03e6962a"
+  app: app-ic
   on:
     repo: INGE-4-ISJ-2021-Groupe-5-Integration-Continue
-    branch: master
+    branch: payep_branch
 
 dist: trusty
