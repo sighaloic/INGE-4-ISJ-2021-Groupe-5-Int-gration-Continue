@@ -15,5 +15,6 @@ deploy:
   on:
     repo: sighaloic/INGE-4-ISJ-2021-Groupe-5-Integration-Continue	
     all_branches: true
+  skip_cleanup: true
 
 dist: trusty
