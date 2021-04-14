@@ -1,13 +1,13 @@
-package cm.isj.ci;
+package com.example.IntegrationContinue;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CiApplicationTests {
+class IntegrationContinueApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }
