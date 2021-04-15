@@ -15,4 +15,4 @@
 #### 5 - Loïc NDIE SIGHA
 
 
-# ~GitHub x Travis CI x Heroku~
+# _GitHub x Travis CI x Heroku_
