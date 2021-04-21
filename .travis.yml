@@ -9,11 +9,11 @@ install:
 
 deploy:
   provider: heroku
-  api_key: "4d37acbc-6e96-4f0e-935f-4b50799f6739"
-  app: helloworld-v
+  api_key: "ed979da7-2ec0-48ed-b957-2c27b19eeef5"
+  app: helloworld-lorges
   on:
     repo: sighaloic/INGE-4-ISJ-2021-Groupe-5-Integration-Continue	
-    branch: sighaloic
+    branch: pola_lorges
   skip_cleanup: true
 
 dist: trusty
