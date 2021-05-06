@@ -12,12 +12,12 @@ class CalculTest {
     Calcul calcul;
 
 //    Intanciation pour test avec JUnit
-    CalculService calculService = new CalculService() {
-        @Override
-        public int carre(int x) {
-            return x*x;
-        }
-    };
+//    CalculService calculService = new CalculService() {
+//        @Override
+//        public int carre(int x) {
+//            return x*x;
+//        }
+//    };
 
     //    Instanciation pour teste avec Mockito
     CalculService calculService = mock(CalculService.class); // création d'un objet factice
@@ -89,7 +89,7 @@ class CalculTest {
 
         assertFalse(calcul.division(6, 3) == 0, "2 entiers positifs");
         assertEquals(2, calcul.division(-6, -3), "2 entiers négatifs");
-        assertNull(calcul.division(-6, 3), "2 entiers de signe différent");
+        assertNotNull(calcul.division(-6, 3), "2 entiers de signe différent");
         assertTrue(calcul.division(0, 3) == 0, "entiers x null");
         Throwable e = null;
         try{
