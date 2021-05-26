@@ -28,6 +28,7 @@ class HttpClientGetStatusCodeTest {
     @Test
      void httpClientGetStatus() throws ClientProtocolException, IOException {
 
+        System.out.println("******** SERVER CODE STATUS 200 TEST *****************");
         String GOOGLE_URL = "https://helloworld-loic.herokuapp.com/";
 
         CloseableHttpClient instance;
@@ -45,9 +46,9 @@ class HttpClientGetStatusCodeTest {
 
         if (code == statusCode) {
 
-            System.out.println("Status Code  : " + code);
+            System.out.println("TEST PASSED, Status Code  : " + code);
         } else {
-            System.out.println("StatusCode not 200  : " + code);
+            System.out.println("TEST FAILLED, Status Code  : " + code + " (expected 200) ");
         }
     }
 }
