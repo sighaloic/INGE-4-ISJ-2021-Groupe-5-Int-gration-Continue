@@ -47,8 +47,10 @@ class HttpClientGetStatusCodeTest {
         if (code == statusCode) {
 
             System.out.println("TEST PASSED, Status Code  : " + code);
+            System.out.println("***********************************************************");
         } else {
             System.out.println("TEST FAILLED, Status Code  : " + code + " (expected 200) ");
+            System.out.println("***********************************************************");
         }
     }
 }
