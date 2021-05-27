@@ -2,18 +2,27 @@ language: java
 
 jdk:
  - oraclejdk8
+ 
+script: ./mvnw clean install
 
+jobs:
+  include:
+    - stage: Test
+      script: ./mvnw clean test
+
+notifications:
+ - email: payeplionel24@gmail.com
 install:
 - mvn -N io.takari:maven:wrapper
 - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
 deploy:
   provider: heroku
-  api_key: "4d37acbc-6e96-4f0e-935f-4b50799f6739"
-  app: helloworld-v
+  api_key: "c00353d8-18b8-47b7-9c88-c36d90c4e4f1"
+  app: helloworld-payep
   on:
     repo: sighaloic/INGE-4-ISJ-2021-Groupe-5-Integration-Continue	
-    branch: sighaloic
+    branch: payep_branch
   skip_cleanup: true
 
 dist: trusty
