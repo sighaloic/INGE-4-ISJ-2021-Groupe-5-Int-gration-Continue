@@ -26,7 +26,7 @@ class IntegrationContinueApplicationTests {
 	@Test
 	void testSomme() {
 
-		if(calcul.somme(2,3) !=5)
+		if(calcul.somme(2,3) !=6)
 			fail("Faux pour deux entiers positifs");
 
 		if(calcul.somme(-2,-3) !=-5)
