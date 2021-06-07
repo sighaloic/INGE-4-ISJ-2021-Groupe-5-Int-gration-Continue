@@ -7,5 +7,13 @@ install:
 - mvn -N io.takari:maven:wrapper
 - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 
+deploy:
+  provider: heroku
+  api_key: "ed979da7-2ec0-48ed-b957-2c27b19eeef5"
+  app: app-demo-team-v
+  on:
+    repo: sighaloic/INGE-4-ISJ-2021-Groupe-5-Integration-Continue	
+    branch: pola_lorges
+  skip_cleanup: true
 
 dist: trusty
